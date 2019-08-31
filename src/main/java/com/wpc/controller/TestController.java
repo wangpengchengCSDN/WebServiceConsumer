@@ -29,6 +29,7 @@ public class TestController {
         List<Dept> list = testService.selectDeptList();
         model.addAttribute("list",list);
         System.out.println("11111111111111");
+
         System.out.println("11111111111111");
         System.out.println("11111111111111");
         System.out.println("11111111111111");
