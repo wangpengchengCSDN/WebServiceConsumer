@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+    </tr>
+    <tr  th:each="user,Dept : ${list}">
+        <td th:text="${user.did}"></td>
+        <td th:text="${user.dname}"></td>
+        <td><input type="button" value="点击" onclick="getid()"/></td>
+    </tr>
+</table>
+</body>
+
+<script type="text/javascript" src="/jquery.min.js" charset="utf-8"></script>
+<script>
+    $(function () {
+        alert("aaa")
+    })
+
+    function getid() {
+
+    }
+</script>
+</html>
